@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/** Navigation settings*/
+.navbar{
+    margin-bottom: 0px !important;
+}
+.navbar .brand a img{
+    margin-top: -3.7%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: -70px;
+}
+.navbar .navbar-toggle{
+    position: absolute;
+    top: 1%;
+    left: 86%;
+    transform: translate(-85% -5%);
+}
+.navbar .navbar-collapse .nav-item a{
+    color:white;
+}
+.navbar .navbar-collapse .nav-item a:hover{
+    color:rgb(104, 172, 90);
+}
+/** Trainers */
+.trainers{
+    background-color: rgb(105, 100, 100);
+}
+.trainer .row{
+    padding: 50px 0px !important;
+}
+.trainers .border-left{
+    float: left;
+}
+.trainers .pp{
+    border: 4px solid black;
+    height: 400px !important;
+    float: left;
+}
+.trainers .pp:hover{
+    transform: scale(1.08);
+    transition: all .5s;
+}
+.trainers span{
+    color: yellowgreen;
+    margin-left: 36% !important;
+    text-align: justify;
+}
+.trainers h3{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px rgb(90, 0, 0);
+    padding-bottom: 30px;
+}
+.trainers .right-text{
+    margin-left: 450px;
+}
+.trainers .right-features{
+    margin-left: 480px;
+}
+.trainers .adress{
+    float: right;
+}
+.trainers .adress a{
+    margin-left: 20px;
+}
+.trainers #instagram{
+    color: rgba(255, 251, 0, 0.603)
+}
+.trainers #facebook{
+    color: rgb(4, 51, 151);
+}
+.trainers #twitter{
+    color: rgb(47, 47, 255);
+}
+.trainers a i:hover{
+     transform: scale(1.2);
+     transition: transform 0.2s;
+     opacity: 0.8;
+}
+/** CERTIFICATES */
+.certificate{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 13%;
+    margin-bottom: 80px;
+}
+.certificate .certificate_1, .certificate_2, .certificate_3{
+    flex-direction:row;
+    flex-grow: 1;
+}
+.certificate a{
+    cursor: default;
+}
+.certificate .certificate-img{
+    height: 240px;
+    width: 200px;
+    cursor: zoom-in;
+}
+
+/** Footer */
+.footer{
+    background-color:rgb(54, 53, 53);
+}
+.footer .item{
+    margin-top: 80px;
+    color: white;
+}
+.footer .item h6{
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(58, 255, 101);
+    margin-bottom: 20px;
+}
+.footer .item p{
+    word-spacing: 3.3px;
+    color: rgb(139, 172, 63);
+}
+.footer .item .text{
+    text-align: justify;
+    margin-right: 15px;
+}
+.footer .item .icons{
+    text-align: center; 
+    margin-top: 20px;
+}
+.footer .item .fab{
+    padding-top: 5px;
+    padding-right: 20px;
+}
+.footer .item ul{
+    list-style: none;
+    color: white;
+}
+.footer .item .communicate li{
+    padding: 10px;
+    color: white;
+}
+.footer .item ul .glyphicon{
+    padding-right: 15px;
+}
+.footer #time{
+    margin-left: 45%;
+    transform: translateX(-45%);
+    margin-top: 0% !important;
+    color: rgb(58, 255, 101);;
+}
+.footer .time-table{
+    margin-top: 10px;
+}
+.footer .time-table li{
+    text-align: justify;
+    padding: 10px;
+    color: yellow;
+}
+.footer #instagram{
+    color: rgba(223, 219, 8, 0.603)
+}
+.footer #youtube{
+    color: rgb(207, 44, 44);
+}
+.footer a i:hover{
+     transform: scale(1.2);
+     transition: transform 0.2s;
+     opacity: 0.8;
+}
+
+@media screen and (max-width:993px) {
+    /** Trainers */
+    .trainers .border-left{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .trainers .pp{
+        border: 4px solid black;
+        height: 400px !important;
+        margin-bottom: 40px;
+    }
+    .trainers h3{
+        padding-top: 40px;
+        text-align: center;
+        color: rgb(255, 0, 0);
+        text-shadow: 2px 2px rgb(90, 0, 0);
+        padding-bottom: 30px;
+    }
+    .trainers span{
+        margin-left: -30% !important;
+    }
+    .trainers .right-text{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .trainers .right-features{
+        margin-left: 0px;
+    }  
+    /**CERTIFICATE */
+    .certificate{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 7%;
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-width: 768px) {
+    /** CERTIFICATE */
+    .certificate{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 4%;
+        margin-bottom: 80px;
+    }
+    .certificate .certificate-img{
+        height: 200px;
+        width: 150px;
+    }
+    
+
+    /** Footer */
+    .footer #time{
+        align-items: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0% !important;
+        color: rgb(58, 255, 101);;
+    }
+}
+@media screen and (max-width: 544px) {
+   /** Trainers */
+    .trainers .border-left{
+        width: 300px;
+    }
+    .trainers h3{
+        font-size: 20px;
+    }
+     /** CERTIFICATE */
+     .certificate{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2%;
+        margin-bottom: 80px;
+    }
+    .certificate .certificate-img{
+        height: 140px;
+        width: 100px;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    /** Navbar settings */
+    .navbar .brand a img{
+        margin-top: -15%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }  
+}
+
+@media screen and (max-width:426px) {
+    .trainers .border-left{
+        width: 260px;
+    }
+    .trainers .pp{
+        border: 4px solid black;
+        height: 270px !important;
+        margin-bottom: 40px;
+    }
+    .trainers .adress .right{
+        margin-left: -80% !important;
+        padding-bottom: 20px;
+        display: block;
+    }
+    .trainers .adress a{
+        margin-left: 1% !important;
+    }
+}
+@media screen and (max-width:351px){
+    /** TRAINERS */
+    .trainers .adress .right{
+        margin-left: -20% !important;
+        padding-bottom: 20px;
+        display: block;
+    }
+    /** CERTIFICATE */
+    /** CERTIFICATE */
+    .certificate{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1%;
+        margin-bottom: 80px;
+    }
+    .certificate .certificate-img{
+        height: 140px;
+        width: 80px;
+    }
+}

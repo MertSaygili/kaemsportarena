@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+/** Navigation settings*/
+.navbar{
+    margin-bottom: 0px !important;
+}
+.navbar .brand a img{
+    margin-top: -3.7%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: -70px;
+}
+.navbar .navbar-toggle{
+    position: absolute;
+    top: 1%;
+    left: 86%;
+    transform: translate(-85% -5%);
+}
+.navbar .navbar-collapse .nav-item a{
+    color:white;
+}
+.navbar .navbar-collapse .nav-item a:hover{
+    color:rgb(104, 172, 90);
+}
+/*********/
+.page{
+    position: absolute;
+    width: 100%;
+    height: 100% !important;
+    z-index: -100;
+    background-color: black;
+}
+.pt .item3{
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+}
+/** pt */
+.pt img{
+    position: absolute;
+    z-index: -99;
+}
+.pt .item1 h3{
+    margin: 50px 0px;
+    text-align: center !important;
+    font-size: 28px;
+    color: rgb(26, 134, 24);
+}
+.pt .item1 ul{
+    margin-top: 3%;
+    transform: translateY(-3%);
+    font-size: 16px;
+    list-style: none;
+    margin-left: 20px;
+}
+.pt .item1 .glyphicon{
+    color: rgb(179, 113, 241);
+    margin: 15px 10px;
+}
+.pt .item1 p{
+    margin-top: 15%;
+    transform: translateY(-15%);
+    text-align: center;
+}
+.pt .item1 .price{
+    font-size: 20px;
+    color: rgb(230, 18, 18);
+
+}
+.pt .item1 li{
+    color:rgb(192, 175, 26);
+}
+
+/**pt item2 */
+.pt .item2 h3{
+    color: rgb(26, 134, 24);
+    font-size: 28px;
+    margin-top: 150px !important;
+    text-align: center;
+}
+
+.pt .item2 ul{
+    list-style: none;
+    margin-top: 2%;
+    transform: translateY(-2%);
+    font-size: 16px;
+}
+.pt .item2 li{
+    color:rgb(192, 175, 26);
+}
+.pt .item2 .glyphicon{
+    color: rgb(179, 113, 241);
+    margin: 15px 15px;
+}
+.pt .item2 p{
+    margin-top: 28%;
+    transform: translateY(-28%);
+    text-align: center;
+}
+.pt .item2 .price{
+    font-size: 20px;
+    color:red;
+}
+
+
+ @media screen and (max-width:1215px) {
+    .pt .item2 p{
+        margin-top: 18%;
+        transform: translateY(-18%);
+        text-align: center;
+    }
+ }
+ @media screen and (max-width: 1000px) {
+    /** pt 
+    .pt .row{
+        margin-left: 0%;
+    }
+    */
+    .pt .item1 ul{
+        margin-left: -20px;
+        font-size: 14px;
+    }
+    .pt .item1 h3{ 
+       font-size: 25px;
+       margin-bottom: 15px;
+    }
+    .pt .item1 p{
+        margin-top: 7%;
+        transform: translateY(-7%);
+        text-align: center;
+    }
+    .pt .item1 .price{
+        font-size: 20px;
+    }
+        /**item2 */
+    .pt .item2 h3{
+        margin-top: 10px !important;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .pt .item2 ul{
+        list-style: none;
+        margin-top: 2%;
+        transform: translateY(-2%);
+        font-size: 16px;
+    }
+    .pt .item2 p{
+        margin-top: 5%;
+        transform: translateY(-5%);
+        text-align: center;
+    }
+    .pt .item2 .price{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 872px) {
+    .footer{
+        margin-top: 170px !important;
+    }
+ }
+ @media screen and (max-width: 768px) {
+    /** Navbar settings */
+    .navbar .brand a img{
+        margin-top: -7%;
+        margin-left: 50%;
+        transform: translate(-50% 7%);
+    }
+    .pt .item1 ul{
+        margin-left: -20px;
+        font-size: 13.4px;
+    }
+    .pt .item1 p{
+        margin-top: 1%;
+        transform: translateY(-1%);
+        text-align: center;
+
+    }
+    .pt .item1 .price{
+        font-size: 16px;
+        color: rgb(230, 18, 18);
+    }
+    .pt .item2 h3{
+        margin-top: 5px !important;
+    }
+    .pt .item2 ul{
+        margin-left: -20px;
+        font-size: 13.4px;
+    }
+    .pt .item2 p{
+        margin-top: 4%;
+        transform: translateY(-4%);
+        text-align: center;
+
+    }
+    .pt .item2 .price{
+        font-size: 16px;
+        color: rgb(230, 18, 18);
+    }
+}
+@media screen and (max-width:590px){
+    .pt ul{
+        margin-left: -25px;
+        font-size: 14px;
+    }
+    .pt .item1 h3{ 
+       font-size: 20px;
+       margin-top: 14px;
+    }
+    .pt .item1 p{
+        margin-top: 0.5%;
+        transform: translateY(-0.5%);
+        text-align: center;
+    }
+    .pt .item1 .glyphicon{
+        color: rgb(179, 113, 241);
+        margin: 10px 10px;
+    }
+    .pt .item1 .price{
+        font-size: 15px;
+        color: rgb(230, 18, 18);
+    }
+    .pt ul{
+        margin-left: -25px;
+        font-size: 14px;
+    }
+    .pt .item2 h3{ 
+       font-size: 20px;
+       margin-top: 14px;
+    }
+    .pt .item2 p{
+        margin-top: 32% !important;
+        transform: translateY(-2%);
+        text-align: center;
+    }
+    .pt .item2 .glyphicon{
+        color: rgb(179, 113, 241);
+        margin: 10px 10px;
+    }
+    .pt .item2 .price{
+        font-size: 15px;
+        color: rgb(230, 18, 18);
+    
+    }
+
+}
+@media  screen and (max-width:500px) {
+    /** Navbar settings */
+    .navbar .brand a img{
+        margin-top: -15%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .pt .item1 img{
+        height: 300px;
+    }
+    .pt .item1 .glyphicon{
+        color: rgb(179, 113, 241);
+        margin: 6px 10px;
+    }
+    .pt .item1 p{
+        margin-top: 20%;
+        transform: translateY(-20%);
+        text-align: center;
+    }
+    .pt .item1 .price{
+        font-size: 15px;
+        color: rgb(230, 18, 18);
+    
+    }
+    .pt .item2 img{
+        height: 340px;
+    }
+    .pt .item2 .glyphicon{
+        color: rgb(179, 113, 241);
+        margin: 6px 10px;
+    }
+    .pt .item2 p{
+        margin-top: 20%;
+        transform: translateY(-20%);
+        text-align: center;
+    }
+    .pt .item2 .price{
+        font-size: 15px;
+        color: rgb(230, 18, 18);
+    
+    }
+}
+

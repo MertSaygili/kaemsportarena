@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/** Navigation settings*/
+.navbar{
+    margin-bottom: 0px !important;
+}
+.navbar .brand a img{
+    margin-top: -3.7%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: -70px;
+}
+.navbar .navbar-toggle{
+    position: absolute;
+    top: 1%;
+    left: 86%;
+    transform: translate(-85% -5%);
+}
+.navbar .navbar-collapse .nav-item a{
+    color:white;
+}
+.navbar .navbar-collapse .nav-item a:hover{
+    color:rgb(104, 172, 90);
+}
+/** Page */
+.page{
+    background-color: rgb(37, 26, 26);
+    padding:50px  0px 100px 0px;
+}
+.page .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px;
+}
+.page .column{
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 8px;
+}
+.page .column img{
+    margin-top: 12px;
+    vertical-align: middle;
+    width: 100% !important;
+
+}
+/** Footer */
+.footer{
+    background-color:rgb(54, 53, 53);
+}
+.footer .item{
+    margin-top: 80px;
+    color: white;
+}
+.footer .item h6{
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(58, 255, 101);
+    margin-bottom: 20px;
+}
+.footer .item p{
+    word-spacing: 3.3px;
+    color: rgb(139, 172, 63);
+}
+.footer .item .text{
+    text-align: justify;
+    margin-right: 15px;
+}
+.footer .item .icons{
+    text-align: center; 
+    margin-top: 20px;
+}
+.footer .item .fab{
+    padding-top: 5px;
+    padding-right: 20px;
+}
+.footer .item ul{
+    list-style: none;
+    color: white;
+}
+.footer .item .communicate li{
+    padding: 10px;
+    color: white;
+}
+.footer .item ul .glyphicon{
+    padding-right: 15px;
+}
+.footer #time{
+    margin-left: 45%;
+    transform: translateX(-45%);
+    margin-top: 0% !important;
+    color: rgb(58, 255, 101);;
+}
+.footer .time-table{
+    margin-top: 10px;
+}
+.footer .time-table li{
+    text-align: justify;
+    padding: 10px;
+    color: yellow;
+}
+.footer #instagram{
+    color: rgba(223, 219, 8, 0.603)
+}
+.footer #youtube{
+    color: rgb(207, 44, 44);
+}
+.footer a i:hover{
+     transform: scale(1.2);
+     transition: transform 0.2s;
+     opacity: 0.8;
+ }
+ @media screen and (max-width: 768px) {
+    /** Navbar settings */
+    .navbar .brand a img{
+        margin-top: -7%;
+        margin-left: 50%;
+        transform: translate(-50% 7%);
+    }
+    /** Page */
+    .page .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+    /** Footer */
+    .footer #time{
+        align-items: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0% !important;
+        color: rgb(58, 255, 101);;
+    }
+}
+@media screen and (max-width:600px) {
+       .page .column{
+           flex: 100%;
+           max-width: 100%;
+       } 
+}
+@media  screen and (max-width:500px) {
+    /** Navbar settings */
+    .navbar .brand a img{
+        margin-top: -15%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
